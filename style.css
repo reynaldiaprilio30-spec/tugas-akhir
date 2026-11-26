@@ -1,0 +1,310 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #1c2541;
+}
+.wrapper {
+    width: 1001px;
+    margin: auto;
+    position: relative;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: #0b132b;
+    border-bottom: 4px solid #ff5500;
+    z-index: 10;
+}
+.logo a {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff;
+    float: left;
+    letter-spacing: 0.5px;
+}
+.logo a span {
+    color: #ffcc00;
+}
+.menu {
+    float: right;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section & Hero */
+section {
+    margin: 0px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    align-items: center;
+}
+.kolom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 25px;
+}
+.kolom .deskripsi {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff5500;
+    letter-spacing: 1px;
+}
+h2 {
+    font-weight: 900;
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: #0055ff;
+    width: 100%;
+    line-height: 46px;
+}
+p {
+    margin: 10px 0px;
+    padding: 4px 0px;
+    line-height: 1.6;
+}
+.gambar {
+    width: 470px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 85, 255, 0.2);
+}
+.gambar1 {
+    width: auto;
+    height: 380px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(255, 85, 0, 0.2);
+}
+
+/* Tombol Hot Wheels */
+a.tbl-one {
+    background: #ff5500;
+    border-radius: 20px;
+    padding: 10px 18px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.tbl-one:hover {
+    background: #e60000;
+    color: #ffffff;
+}
+a.tbl-two {
+    background: #0055ff;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 12px 24px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+a.tbl-two:hover {
+    background: #ff5500;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Katalog Produk Diecast */
+.produk-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.kartu-produk {
+    width: 23%;
+    margin: 10px auto;
+    background: #ffffff;
+    padding: 15px 12px;
+    border-radius: 15px;
+    border-top: 4px solid #0055ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.2s;
+}
+.kartu-produk:hover {
+    transform: translateY(-5px);
+    border-top-color: #ff5500;
+}
+.kartu-produk .badge {
+    display: inline-block;
+    background: #0b132b;
+    color: #ffcc00;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.kartu-produk img {
+    width: 90%;
+    border-radius: 10px;
+}
+.kartu-produk p {
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+    color: #0b132b;
+    margin-bottom: 2px;
+}
+.kartu-produk .harga {
+    display: inline-block;
+    font-weight: 800;
+    color: #e60000;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.tbl-beli {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.tbl-beli:hover {
+    background: #1ebe57;
+}
+
+/* Partners / Seri Resmi */
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+}
+.kartu-partner img {
+    width: 135px;
+    border-radius: 50%;
+    border: 3px solid #ff5500;
+}
+
+/* Footer & Contact */
+.contact {
+    background: #0b132b;
+    color: #e0e0e0;
+    padding: 35px 0px;
+    border-top: 4px solid #0055ff;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.footer-section {
+    width: 22%;
+    margin: 0px auto;
+}
+h4 {
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    width: 100%;
+    line-height: 24px;
+}
+#copyright {
+    background: #060a17;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 48px;
+    }
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+    section {
+        display: block;
+    }
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .kartu-partner {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    .kartu-produk {
+        width: 46%;
+    }
+    .footer-section {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
